@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'apple';
+    src: url(/html/fonts/SF-UI-Display-Regular.otf);
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    height: 60%;
+    width: 55%;
+    border: 25px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    border-bottom: 30px solid #004d79;
+}
+
+.header > img {
+    width: 125px;
+    padding: 15px;
+    margin-left: 5%;
+}
+
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    width: 50%;
+    background-color: red;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left > img {
+    width: 350px;
+    height: 200px;
+    border: 2px solid #978a88;
+}
+
+.vragen-container {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.vragen-header {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'apple';
+}
+
+.antwoorden-container {
+    width: 80%;
+    height: 80%;
+}
+
+.antwoord {
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.antwoord > div {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'apple';
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: #004d79;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-btn {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mid {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid > div{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: 'apple';
+    margin-left: 4px;
+    font-size: 14px;
+
+}
+
+.active {
+    background-color: rgb(233, 120, 22) !important;
+    border: 1px solid #004d79 !important;
+    color: white !important;
+}
+
+.right-btn {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right-btn > Button {
+    padding: 10px 0px;
+    border: 2px solid #444c50;
+    border-radius: 10px;
+    font-family: 'apple';
+    font-weight: bold;
+    background-color: white;
+    width: 150px;
+}
+
+.left-btn > Button {
+    padding: 10px 0px;
+    border: 2px solid #444c50;
+    border-radius: 10px;
+    font-family: 'apple';
+    font-weight: bold;
+    background-color: white;
+    width: 150px;
+}
