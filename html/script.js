@@ -5,8 +5,6 @@ $(document).ready(() => {
         let data = event.data 
 
         if (data.action == "openCBR") {
-    console.log("hatsa")
-
             $(".container").fadeIn()
             setupCBR()
         }
