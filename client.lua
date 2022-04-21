@@ -5,9 +5,25 @@ Citizen.CreateThread(function()
         TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
         Citizen.Wait(0)
     end
+
+
+    createstandardBlip()
 end)
 
 
+
+createstandardBlip = function()
+    local x,y,z = table.unpack(MN.markers[1].coords)
+
+    local standardblip = AddBlipForCoord(x,y,z)
+    SetBlipSprite (standardblip, 351)
+    SetBlipScale  (standardblip, 0.8)
+    SetBlipColour (standardblip, 17)
+
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentString('CBR')
+    EndTextCommandSetBlipName(standardblip)
+end
 
 
 --- Thread 
