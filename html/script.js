@@ -80,7 +80,7 @@ const Next = () => {
 const closeUI = () => {
   $.post("https://mn-cbr-FiveM/testDone", JSON.stringify(DATA))
 
-  $(".container").hide()
+  $(".container").fadeOut()
 
   current_vraag = 0
 
